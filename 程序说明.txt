@@ -1,6 +1,0 @@
-原文链接：https://github.com/clayandgithub/zh_cnn_text_classify
-参考博客网址:http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/
-总体思路:本程序将每一条标注过的10类新闻(体育，军事，经济，艺术，计算机)进行分词处理，然后将每个词变成
-词向量，作为特征。每次输入batchsize个句子每个词的词向量并对最后一维进行扩展(shape为[batch_size,
-sequence_length,embedding_size,1])，经过三次卷积-RELU-池化，然后经过dropout，全连接，softmax操作，
-得到分类结果，训练结束后分类准确率达到了98.5%
